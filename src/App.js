@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import YearButton from './components/YearButton';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <YearButton
         label='2012'
         />
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,24 @@
+.container {
+    position: absolute;
+    min-height: 100px;
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.footerParagraph {
+}
+
+.penguinDown img {
+    height: 300px;
+    transform: translateY(180px);
+}
+
+.penguinUp img {
+    height: 300px;
+    transform: translateY(15px);
+    transition: transform 1s ease-out;
+}

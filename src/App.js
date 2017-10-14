@@ -3,6 +3,7 @@ import './App.css';
 
 import YearButton from './components/YearButton';
 import Footer from './components/Footer';
+import Timeline from './components/Timeline';
 
 class App extends Component {
   render() {

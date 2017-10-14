@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import App from './App';
+import Timeline from './components/Timeline';
+
+ReactDOM.render(
+  <BrowserRouter>
+      <Switch>
+          <Route exact path="/" component={App}/>
+          <Route path="/timeline" component={Timeline} />
+      </Switch>
+  </BrowserRouter>,
+  document.getElementById('root'));
 registerServiceWorker();

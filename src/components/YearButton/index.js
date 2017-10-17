@@ -6,20 +6,15 @@ import './styles.css';
 class YearButton extends Component {
   constructor (props) {
     super(props);
-
-    this.openYear = this.openYear.bind(this);
-  }
-
-  openYear() {
-    alert('Yay');
   }
 
   render() {
-    const {label} = this.props;
+    const {label, onClick} = this.props;
     return (
       <MuiThemeProvider>
           <RaisedButton
             label={label}
+            onClick={onClick}
           />
       </MuiThemeProvider>
     );

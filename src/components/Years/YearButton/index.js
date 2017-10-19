@@ -4,9 +4,6 @@ import RaisedButton from 'material-ui/RaisedButton';
 import './styles.css';
 
 class YearButton extends Component {
-  constructor (props) {
-    super(props);
-  }
 
   render() {
     const {label, onClick} = this.props;

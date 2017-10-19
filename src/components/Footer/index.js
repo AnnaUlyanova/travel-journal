@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import './styles.css';
 
 class Footer extends Component {
@@ -23,7 +22,7 @@ class Footer extends Component {
     return (
       <div className='container'>
         <div className='footerParagraph'><p>Footer</p></div>
-        <div className={isUp ? 'penguinUp' : 'penguinDown'} onClick={this.penguinUp}> <img src='/images/penguin.png' /></div>
+        <div className={isUp ? 'penguinUp' : 'penguinDown'} onClick={this.penguinUp}> <img src='/images/penguin.png' alt='penguin'/></div>
       </div>
     );
   }
